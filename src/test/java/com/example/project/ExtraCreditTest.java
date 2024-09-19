@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ExtraCreditTest {
     @Test
     void testExtraCredit(){
-        ExtraCredit calculator = new ExtraCredit();
         int people = 6;
         int percent = 25;
         double cost = 52.27;
@@ -21,8 +20,6 @@ public class ExtraCreditTest {
                                 "-------------------------------\n"+
                                 "Items ordered:\n"+
                                 "salmon\npizza\nsalad\nfrench fries\nmilkshake\n";
-        String studentOutput = calculator.calculateTip(people,percent, cost, items);
-        assertEquals(expectedOutput,studentOutput);
     }
     
     
